@@ -8,22 +8,26 @@
 }
 
 .absoluteContainer {
-  width: 100vw;
-  height: 100vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 23rem;
+  height: 35rem;
   z-index: 100;
   display: flex;
   position: absolute;
-  justify-content: center;
-  align-items: center;
+ 
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .mainContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80vw;
-  height: 70vh;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
   background-color: #fff !important;
   border-radius: 16px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
@@ -31,15 +35,43 @@
 }
 
 .imageContainer {
-  margin-top: 5rem;
   display: flex;
+  /* display: block; */
+  position: relative;
+  width: 16rem;
+  height: 9rem;
+  /* margin: auto; */
+  border-radius: 1rem;
 }
 
 .contentContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  position: relative;
+   overflow-y: auto;
+  /* align-items: center; */
+  /* justify-content: center; */
   margin: 1rem;
+/* clear: both; */
+
+  /* width: auto; */
+/* overflow: auto; */
+  background-color: #fff !important;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.address {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 @media (min-width: 500px) {
