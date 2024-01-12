@@ -10,7 +10,7 @@ function MoreInfoModal(props: any) {
         <button className={styles.closeBtn} onClick={() => props.setIsOpen(false)}>
           x
         </button>
-        <div className={styles.mainContainer}>
+        <div className={styles.mainContainer}> 
           <div className={styles.fillContainer}>
             <Image
               src={props.imageUrl}
